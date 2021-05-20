@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body onload="getTime()">
+    <div id="header">
+        <h1>Clock</h1>
+        <div id="big-clock"></div>
+    </div>
+    <div id="stopwatch">
+        <h3>StopWatch</h3>
+        <!-- <div class="small-clock" id="stpClock">00:00:00 <span class="milli-sec">000</span></div> -->
+        <div class="small-clock" id="stpClock" onload="func()"></div>
+        <div id="stopwatch-btns">
+            <button id="stp-start" class="c-btn">Start</button>
+            <button id="stp-pause" class="pause-btn c-btn">Pause</button>
+            <button id="stp-reset" class="reset-btn c-btn red-bg">Reset</button>
+        </div>
+    </div>
+    <div id="timer">
+        <h3>Timer</h3>
+        <div class="small-clock">00:00:00 <span class="milli-sec">000</span></div>
+        <div id="numpad"></div>
+        <div id="timer-btns">
+            <button class="start-btn c-btn">Start</button>
+            <button class="pause-btn c-btn">Pause</button>
+            <button class="stop-btn c-btn red-bg">Stop</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
